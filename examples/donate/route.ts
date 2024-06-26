@@ -18,8 +18,8 @@ import {
 import { prepareTransaction } from '../transaction-utils';
 
 const DONATION_DESTINATION_WALLET =
-  '3h4AtoLTh3bWwaLhdtgQtcC3a3Tokb8NJbtqR9rhp7p6';
-const DONATION_AMOUNT_SOL_OPTIONS = [1, 5, 10];
+  'EcpEJxk7cxFhJRtEj4qqLEz2TmTmuZhTDwT3rY6auNmA';
+const DONATION_AMOUNT_SOL_OPTIONS = [0.1, 1, 5];
 const DEFAULT_DONATION_AMOUNT_SOL = 1;
 
 const app = new OpenAPIHono();
@@ -142,10 +142,10 @@ function getDonateInfo(): Pick<
   'icon' | 'title' | 'description'
 > {
   const icon =
-    'https://ucarecdn.com/7aa46c85-08a4-4bc7-9376-88ec48bb1f43/-/preview/880x864/-/quality/smart/-/format/auto/';
-  const title = 'Donate to Alice';
+    'https://i.imgur.com/ATBNxgN.png';
+  const title = 'Donate to Alessandro Mazza';
   const description =
-    'Cybersecurity Enthusiast | Support my research with a donation.';
+    'Support me and try your first blink blink👀';
   return { icon, title, description };
 }
 async function prepareDonateTransaction(
